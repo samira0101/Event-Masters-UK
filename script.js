@@ -13,6 +13,9 @@ let events = [];
 const ticketMasterAPIKey = "1BjUoXQCNeA20BPARaQHG2ezCoamZAwe";
 const openWeatherAPIKey = "1ca21b13300483dc1e57d37215dcac93";
 
+var array = [];
+// Save array in local storage
+
 // Retreiving then storing live date from moment js to specify the events displayed to be for on the day. Using the variable 'Today' as a paremeter in the fetch call to get events data.
 let Today = moment().format("YYYY-MM-DD");
 // Once the search button is used, the video will be replaced with event and weather content
