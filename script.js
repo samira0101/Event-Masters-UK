@@ -18,6 +18,8 @@ var array = [];
 
 // Retreiving then storing live date from moment js to specify the events displayed to be for on the day. Using the variable 'Today' as a paremeter in the fetch call to get events data.
 let Today = moment().format("YYYY-MM-DD");
+// console.log(Today)
+
 // Once the search button is used, the video will be replaced with event and weather content
 video.remove();
 // Function to get events from ticket masters API, and then dynamically displaying data using cards.
