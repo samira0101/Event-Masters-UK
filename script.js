@@ -23,6 +23,31 @@ function searchHandler(e) {
     Today +
     "&size=2"
   ).then((res) => res.json()).then((data) => {console.log(data)
+    data["_embedded"].events.forEach((event) => {
+    eventContainer.innerHTML +=
+    // adding cards to display the events
+  ` <div class="card mt-4">
+     <div class="tile is-parent">
+      <div class="tile is-child box">
+      <p class="title">Event name</p>
+      <p class="title">${event.name}</p>
+      <img src="https://app.ticketmaster.com/discovery/v2/${event.images[0].url}.png">
+      </div>    
+     <div class="tile is-ancestor">
+     <div class="tile is-parent">
+    <article class="tile is-child box">
+     <p class="title">Event status</p>
+     <p class="title">${event.dates.status.code}</p>
+    </article>
+    </div>    
+    <div class="tile is-parent">
+    <article class="tile is-child box">
+     <p class="title"> Price: £${event.priceRanges[0].max}</p>
+    </article>
+    </div>  
+    </div>`
+    }); 
+  });
 // Fetching weather data
     fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${locationInputEl.value},gb&appid=${openWeatherAPIKey}&units=metric`
