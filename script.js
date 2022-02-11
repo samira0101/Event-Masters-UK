@@ -64,5 +64,13 @@ function searchHandler(e) {
     
     console.log(weather)
 
+    // Storing weather data into an object
+    let weatherObject = {};
+    weatherObject.temp = data.main.temp;
+    weatherObject.name = data.name;
+    weatherObject.weather = data.weather[0].main;
+    weatherObject.weatherDescription = data.weather[0].description;
+    weatherObject.weatherIcon = data.weather[0].icon;
+    
 // Search button event listener to run the function searchHnadler
 button.addEventListener("click", searchHandler)
