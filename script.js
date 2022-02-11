@@ -104,5 +104,13 @@ function searchHandler(e) {
      historyArray.innerHTML += `<li><button>${place}</button></li>`;
    });
 
+// saving items into localstorage
+
+localStorage.setItem('array', JSON.stringify(array));
+
+var retrievedHistory = localStorage.getItem('array');
+JSON.parse(localStorage.getItem)
+
+  }
 // Search button event listener to run the function searchHnadler
 button.addEventListener("click", searchHandler)
