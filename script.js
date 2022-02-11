@@ -96,5 +96,13 @@ function searchHandler(e) {
  
   });
 
+   // Retreive array from local storage
+   array.push(locationInputEl.value);
+   // save item back into local storage
+   historyArray.innerHTML = "";
+   array.forEach((place) => {
+     historyArray.innerHTML += `<li><button>${place}</button></li>`;
+   });
+
 // Search button event listener to run the function searchHnadler
 button.addEventListener("click", searchHandler)
