@@ -12,6 +12,8 @@ let Today = moment().format("YYYY-MM-DD");
 video.remove();
 // Function to get events from ticket masters API, and then dynamically displaying data using cards.
 function searchHandler(e) {
+    // Clearing event data on page when a new location is searched
+  eventContainer.innerHTML = ""
   fetch(
     "https://app.ticketmaster.com/discovery/v2/events.json?apikey=" +
     ticketMasterAPIKey +
