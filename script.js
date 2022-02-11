@@ -1,6 +1,10 @@
 // Targeting html elements by id and class
 const locationInputEl = document.getElementById("locationInput");
 const button = document.getElementById("submit");
+const eventContainer = document.querySelector(".event-container")
+const card = document.querySelectorAll(".event-container .card")
+const weatherContainer = document.querySelector(".weather-container")
+const historyArray = document.querySelector("#searchHistoryList > ul");
 let video = document.querySelector("video");
 // Storing Api Keys in const
 const ticketMasterAPIKey = "1BjUoXQCNeA20BPARaQHG2ezCoamZAwe";
