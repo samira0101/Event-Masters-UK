@@ -6,6 +6,9 @@ const card = document.querySelectorAll(".event-container .card")
 const weatherContainer = document.querySelector(".weather-container")
 const historyArray = document.querySelector("#searchHistoryList > ul");
 let video = document.querySelector("video");
+let weather = [];
+let events = [];
+
 // Storing Api Keys in const
 const ticketMasterAPIKey = "1BjUoXQCNeA20BPARaQHG2ezCoamZAwe";
 const openWeatherAPIKey = "1ca21b13300483dc1e57d37215dcac93";
