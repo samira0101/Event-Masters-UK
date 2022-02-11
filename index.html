@@ -1,0 +1,71 @@
+
+<!-- Hero section with nav bar -->
+<section class="hero is-black ">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <!-- Logo -->
+              <header>Events Master UK</header>
+            </a>
+          <div id="navbarMenuHeroB" class="navbar-menu">
+            <div class="navbar-end">
+              <!-- Links back to homepage -->
+              <a href="./index.html" class="navbar-item is-active">
+                Home
+              </a>
+             </div>
+        </div>
+        </div>
+      </nav>
+      <!-- Hero section with search bar and search buttom-->
+    </div>
+    <div id="hero">
+        <div class="hero-body mt-0">
+     <div class="container is-fluid has-text-centered mt-0">
+              <p class="title">
+                Find Out What Events Are Happening Near You Today
+              </p>
+              <p class="subtitle">
+                From Theatre, to Bands, and Concerts
+                  </p>
+                  <div class="field has-addons">
+                    <div class="container text-left mt-1 d-inline-block">
+                    <div class="control">
+                      <input class="input is-outlined" type="text"  id="locationInput" placeholder="Search by City">
+                      <br>
+                      <button class="button is-link is-rounded is-small mt-2" type="submit" id="submit">
+                        Search
+                      </button>
+                    </div>
+                  </div>
+                </div>
+             </div>
+            </div>
+    </div>
+  </section>
+  <body>  
+    <!-- Displayed searched history list on browser -->
+  <section id= "searchHistoryList" >
+    <ul style= "display:flex; margin: 20px; ">
+    </ul>
+  </section>
+  <!-- Video  -->
+  <section class="columns is-mobile is-centered is-vcentered">      
+                <section class="video   is-inline-block">
+                    <video playsinline autoplay muted loop poster="placeholder" id="bgvideo" width="50%" height="25px" >
+                      <source src="video/event.mp4" type="video/mp4">
+                    </video>
+                </section>
+  </section>  
+   <!--Add current events and weather data for the day to html using JS-->
+<div class="event-container"> </div>
+<div class="weather-container"> </div>
+    
+    <!-- Script Links to Jquery, Moment.js and JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
